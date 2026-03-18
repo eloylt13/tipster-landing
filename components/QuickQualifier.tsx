@@ -92,7 +92,11 @@ export default function QuickQualifier({ content, answers, onAnswer }: QuickQual
             </div>
           </div>
 
-          <div className="rounded-[1.8rem] border border-white/10 bg-[rgba(4,7,14,0.42)] p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] sm:p-5">
+          <div
+            className="rounded-[1.8rem] border border-white/10 bg-[rgba(4,7,14,0.42)] p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] sm:p-5"
+            aria-live="polite"
+            aria-atomic="true"
+          >
             <div className="flex items-center justify-between gap-3 text-[0.68rem] font-semibold uppercase tracking-[0.26em] text-slate-400">
               <span>{isComplete ? "Resumen final" : `Paso ${stepIndex + 1} de ${content.steps.length}`}</span>
               <span>{Math.round(progress)}%</span>
@@ -188,3 +192,4 @@ export default function QuickQualifier({ content, answers, onAnswer }: QuickQual
     </section>
   );
 }
+
