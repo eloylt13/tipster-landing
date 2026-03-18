@@ -40,14 +40,14 @@ function Field({
 }) {
   return (
     <div className="space-y-2">
-      <label className="block text-[0.72rem] font-semibold uppercase tracking-[0.24em] text-slate-400">
+      <label className="block text-[0.72rem] font-semibold uppercase tracking-[0.24em] text-slate-100">
         {label}
       </label>
       <input
         value={value}
         readOnly
         placeholder={placeholder}
-        className="w-full rounded-[1.1rem] border border-white/10 bg-white/[0.045] px-4 py-3.5 text-sm text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.03)] outline-none transition placeholder:text-slate-500"
+        className="w-full rounded-[1.1rem] border border-white/15 bg-white/[0.065] px-4 py-3.5 text-sm text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.03)] outline-none transition placeholder:text-slate-500"
       />
     </div>
   );
@@ -57,13 +57,13 @@ export default function ContactForm({ content, answers }: ContactFormProps) {
   return (
     <form id="contacto" className="grid gap-4">
       <div className="space-y-2.5">
-        <p className="text-[0.72rem] font-semibold uppercase tracking-[0.3em] text-sky-100/75">
+        <p className="text-[0.72rem] font-semibold uppercase tracking-[0.3em] text-sky-100/85">
           {content.eyebrow}
         </p>
         <h3 className="text-xl font-semibold tracking-tight text-white sm:text-[1.35rem]">
           {content.title}
         </h3>
-        <p className="text-sm leading-6 text-slate-300">{content.description}</p>
+        <p className="text-sm leading-6 text-slate-100">{content.description}</p>
       </div>
 
       <div className="grid gap-3">
@@ -85,13 +85,13 @@ export default function ContactForm({ content, answers }: ContactFormProps) {
       </div>
 
       <div className="space-y-2">
-        <label className="block text-[0.72rem] font-semibold uppercase tracking-[0.24em] text-slate-400">
+        <label className="block text-[0.72rem] font-semibold uppercase tracking-[0.24em] text-slate-100">
           {content.labels.message}
         </label>
         <textarea
           rows={4}
           placeholder={content.placeholders.message}
-          className="w-full resize-none rounded-[1.1rem] border border-white/10 bg-white/[0.045] px-4 py-3.5 text-sm text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.03)] outline-none transition placeholder:text-slate-500 focus:border-sky-200/40 focus:bg-white/[0.065]"
+          className="w-full resize-none rounded-[1.1rem] border border-white/15 bg-white/[0.065] px-4 py-3.5 text-sm text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.03)] outline-none transition placeholder:text-slate-500 focus:border-sky-200/40 focus:bg-white/[0.065]"
         />
       </div>
 
@@ -101,7 +101,8 @@ export default function ContactForm({ content, answers }: ContactFormProps) {
       >
         {content.button}
       </button>
-      <p className="text-xs leading-5 text-slate-400">{content.note}</p>
+      <p className="text-xs leading-5 text-slate-100">{content.note}</p>
     </form>
   );
 }
+

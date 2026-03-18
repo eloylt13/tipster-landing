@@ -17,9 +17,9 @@ type FooterProps = {
 export default function Footer({ content }: FooterProps) {
   return (
     <footer className="pb-6 pt-8 sm:pb-8">
-      <div className="flex flex-col gap-4 border-t border-white/10 pt-6 text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between">
+      <div className="flex flex-col gap-4 border-t border-white/15 pt-6 text-sm text-slate-100 sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <p className="font-semibold text-slate-200">{content.brandName}</p>
+          <p className="font-semibold text-slate-100">{content.brandName}</p>
           <p className="mt-1">
             {content.emailLabel}: {content.email}
           </p>
@@ -35,3 +35,4 @@ export default function Footer({ content }: FooterProps) {
     </footer>
   );
 }
+
