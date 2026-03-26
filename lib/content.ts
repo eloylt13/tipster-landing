@@ -1,248 +1,302 @@
 ﻿export const content = {
   brand: {
     name: "Nexo Criterio",
-    tagline: "Lectura clara, seguimiento serio y disciplina en apuestas deportivas.",
+    tagline: "Landings comerciales para tipsters que necesitan presentar mejor su servicio y captar con mas claridad.",
     email: "hola@nexocriterio.com",
   },
   quiz: {
-    eyebrow: "Filtro de acceso",
-    title: "Antes de seguir, quiero entender tu punto de partida",
+    eyebrow: "Filtro de proyecto",
+    title: "Antes de preparar la propuesta, quiero entender en que punto esta tu servicio",
     description:
-      "Este servicio está pensado para personas que buscan más criterio, más seguimiento y menos improvisación en sus apuestas.",
+      "Este bloque me ayuda a orientar mejor la landing, el enfoque comercial y el nivel de personalizacion que mas sentido tiene para tu caso.",
     steps: [
       {
         id: "searchingFor",
-        label: "¿Qué estás buscando ahora?",
+        label: "Que necesitas mejorar ahora?",
         options: [
-          "Recibir picks más trabajados",
-          "Apostar con más criterio",
-          "Mejorar disciplina y gestión",
-          "Encontrar un servicio serio",
+          "Claridad de oferta",
+          "Imagen mas premium",
+          "Captacion de leads",
+          "Ordenar mejor mi propuesta",
         ],
       },
       {
         id: "startingPoint",
-        label: "¿Cuál es tu punto de partida?",
+        label: "En que momento esta tu proyecto?",
         options: [
           "Estoy empezando",
-          "Ya apuesto de vez en cuando",
-          "Tengo experiencia",
-          "Prefiero que me orienten",
+          "Ya vendo pero mi web no acompana",
+          "Tengo audiencia pero convierto poco",
+          "Quiero rehacer solo la parte comercial",
         ],
       },
       {
         id: "mainBlocker",
-        label: "¿Qué te frena más ahora?",
+        label: "Que te esta frenando mas?",
         options: [
-          "He improvisado demasiado",
-          "No tengo tiempo para analizar",
-          "Me cuesta confiar en tipsters",
-          "No controlo bien la banca",
+          "Mi mensaje no se entiende rapido",
+          "La web no transmite suficiente confianza",
+          "No tengo una CTA clara",
+          "Todo se siente demasiado generico",
         ],
       },
     ],
-    summaryTitle: "Perfecto. Ya tengo una visión más clara de lo que te encaja.",
+    summaryTitle: "Perfecto. Ya tengo mejor contexto para orientarte.",
     summaryNote:
-      "Con estas respuestas ya puedo orientarte con más precisión. Si te encaja el enfoque, baja al bloque final y deja tus datos.",
-    primaryCta: "Solicita acceso",
-    secondaryCta: "Hablar por WhatsApp",
+      "Con estas respuestas ya puedo afinar mejor la propuesta y recomendarte la version mas adecuada para tu servicio.",
+    primaryCta: "Ir al formulario",
+    secondaryCta: "Prefiero escribir por email",
+    secondaryHref: "mailto:hola@nexocriterio.com?subject=Consulta%20sobre%20landing%20para%20tipster",
   },
   hero: {
-    eyebrow: "Servicio serio para apuestas deportivas",
-    title: "Menos ruido. Más criterio. Más seguimiento.",
+    eyebrow: "Landing premium para tipsters",
+    title: "Una landing clara y profesional para presentar tu servicio con mas confianza.",
     description:
-      "Una propuesta para quienes quieren leer mejor cada decisión, reducir la improvisación y trabajar con un proceso claro.",
-    primaryCta: "Solicita acceso",
-    secondaryCta: "Ver cómo funciona",
+      "Pensada para tipsters que quieren dejar atras Telegram, capturas y enlaces sueltos para enseñar su propuesta en una pagina sobria, bien ordenada y preparada para generar contactos de mas calidad.",
+    primaryCta: "Ver si encaja con tu proyecto",
+    primaryHref: "#filtro-acceso",
+    secondaryCta: "Ver el proceso",
     highlights: [
-      "Lectura más ordenada de cada pick",
-      "Proceso claro y fácil de seguir",
-      "Sin promesas irreales ni humo",
+      "Presenta mejor tu servicio y transmite una imagen mucho mas solida desde la primera visita",
+      "Explica tu oferta con mas claridad para que el usuario entienda rapido que vendes y como acceder",
+      "Centraliza la captacion en una landing propia en lugar de depender de Telegram y links dispersos",
     ],
   },
   benefits: {
-    eyebrow: "Qué aporta",
-    title: "Una forma más ordenada de seguir apuestas",
+    eyebrow: "Lo que mejora",
+    title: "Una landing pensada para que tu servicio se entienda mejor y se perciba mas serio",
     description:
-      "El objetivo no es prometer atajos, sino ayudarte a trabajar con menos fricción y más control.",
+      "El objetivo no es meter mas bloques, sino dar forma comercial a lo que ya ofreces: mejor presentacion, mejor jerarquia y un siguiente paso mucho mas claro.",
     items: [
       {
-        title: "Menos improvisación",
+        title: "Mejor primera impresion",
         description:
-          "Cada decisión llega con una estructura clara para que no dependas de impulsos ni de mensajes sueltos.",
+          "Tu servicio deja de sentirse improvisado y pasa a mostrarse con una presentacion mas limpia, mas cuidada y mas propia de un proyecto de pago.",
       },
       {
-        title: "Más claridad",
+        title: "Oferta mas entendible",
         description:
-          "Sabes qué estás siguiendo, por qué se propone y qué parte del proceso conviene revisar.",
+          "Se ordenan mensaje, acceso y propuesta para que quien entra entienda rapido que ofreces, para quien es y que tiene que hacer despues.",
       },
       {
-        title: "Mejor control",
+        title: "Captacion mas ordenada",
         description:
-          "Tienes una base más fácil de leer para tomar decisiones con calma y evitar ruido innecesario.",
+          "La landing concentra mejor los puntos de entrada y reduce la dependencia de mensajes sueltos, enlaces perdidos o conversaciones mal filtradas.",
       },
       {
-        title: "Ahorro de tiempo",
+        title: "Mas coherencia comercial",
         description:
-          "La información se presenta de forma directa para que te cueste menos entender el contexto.",
+          "Texto, tono y estructura trabajan en la misma direccion para que la pagina venda con mas criterio y genere mas confianza.",
       },
     ],
   },
   howItWorks: {
-    eyebrow: "Cómo entrar",
-    title: "Un proceso simple, sin vueltas innecesarias",
+    eyebrow: "Como se trabaja",
+    title: "Un proceso claro para pasar de idea a landing lista para captar",
     description:
-      "Queremos que entiendas rápido si el servicio encaja contigo y cómo se empieza sin generar fricción.",
+      "La idea es avanzar rapido, con criterio y sin perder tiempo en vueltas innecesarias o decisiones sin impacto real.",
     items: [
       {
-        title: "1. Responde el filtro",
+        title: "Revisamos tu punto de partida",
         description:
-          "Te haces una idea del enfoque y nos das contexto para valorar si el servicio te encaja.",
+          "Aterrizamos tu servicio, tu posicionamiento y lo que hoy esta frenando la conversion para definir una base clara.",
       },
       {
-        title: "2. Revisión breve",
+        title: "Ordenamos mensaje y estructura",
         description:
-          "Revisamos tus respuestas y vemos si buscas criterio, seguimiento y una experiencia ordenada.",
+          "Se ajustan titulares, bloques, jerarquia y llamadas a la accion para que la landing venda mejor sin perder sobriedad.",
       },
       {
-        title: "3. Acceso al servicio",
+        title: "Entregamos una version afinada",
         description:
-          "Si el perfil encaja, te orientamos sobre el siguiente paso y te compartimos la entrada adecuada.",
+          "El resultado final se adapta a tu estilo, a tu oferta y al tipo de contacto que quieres generar.",
       },
     ],
   },
   programs: {
-    eyebrow: "Formas de entrar",
-    title: "Tres opciones pensadas para momentos distintos",
+    eyebrow: "Opciones",
+    title: "Tres niveles para adaptar la landing al momento real de tu marca",
     description:
-      "No hace falta complicarlo: hay una vía para probar, otra para seguir el canal principal y otra para un acompañamiento más cercano.",
+      "No todos los tipsters necesitan lo mismo. Por eso la base se puede enfocar como una solucion mas directa, mas afinada o mas personalizada.",
     items: [
       {
-        name: "Prueba inicial",
-        audience: "Para quien quiere conocer el enfoque sin entrar a fondo desde el primer día.",
+        name: "Esencial",
+        badge: "Entrada clara",
+        audience: "Para tipsters que necesitan una presencia seria sin complicarse",
         description:
-          "Pensada para validar si el estilo de trabajo, el ritmo y la forma de comunicar encajan contigo.",
-        bullets: ["Primer contacto con el método", "Acceso sencillo", "Útil para perfiles prudentes"],
+          "Una version limpia y bien resuelta para dejar atras una imagen improvisada y empezar a presentar mejor el servicio.",
+        bullets: ["Estructura esencial", "Mensaje ordenado", "CTA principal bien resuelto"],
       },
       {
-        name: "Canal principal",
-        audience: "Para quien busca seguir el servicio con regularidad.",
+        name: "Optimizada",
+        badge: "Mas recomendada",
+        audience: "Para tipsters que ya venden y quieren una landing mas afinada",
         description:
-          "La opción más directa para acompañar el día a día con una lectura más consistente y ordenada.",
-        bullets: ["Seguimiento continuo", "Información más completa", "Pensado para uso habitual"],
+          "La opcion mas equilibrada para mejorar jerarquia, reforzar propuesta y convertir mejor sin recargar la pagina.",
+        bullets: ["Mas claridad comercial", "Mas consistencia visual", "Mas foco en conversion"],
+        featured: true,
       },
       {
-        name: "Acompañamiento premium",
-        audience: "Para quien necesita una relación más cercana y un seguimiento más fino.",
+        name: "Premium",
+        badge: "Alta personalizacion",
+        audience: "Para quien quiere una pieza mas cuidada y mas alineada con su marca",
         description:
-          "Una opción más cuidada para perfiles que valoran contexto, orientación y una comunicación más cercana.",
-        bullets: ["Más atención", "Más contexto", "Más cercanía en la orientación"],
+          "Pensada para servicios con una oferta mas trabajada o con necesidad de una presentacion mas diferencial.",
+        bullets: ["Acabado mas fino", "Mayor personalizacion", "Percepcion mas premium"],
       },
     ],
   },
-  testimonials: {
-    eyebrow: "Lo que suelen valorar",
-    title: "Comentarios de perfiles que buscaban más orden",
+  customization: {
+    eyebrow: "Personalizacion",
+    title: "La base ya esta trabajada. La version final se adapta a tu servicio y a tu forma de captar.",
     description:
-      "La intención no es impresionar, sino mostrar qué suele notar quien encaja con este enfoque.",
+      "La referencia visual ensena el nivel de acabado, pero la landing comercial final se ajusta para que marca, mensaje y captacion reflejen tu caso real.",
+    bridgeLabel: "De demo a landing propia",
+    bridgeTitle: "No es una plantilla cerrada: se convierte en una pieza comercial alineada con tu marca y tu oferta.",
+    bridgeDescription:
+      "La estructura principal ya esta resuelta. Sobre ella se afinan los elementos que mas influyen en credibilidad, claridad y captacion.",
+    items: [
+      {
+        title: "Marca y estilo",
+        description: "Colores, tono visual y acabados adaptados a la identidad real del tipster.",
+      },
+      {
+        title: "Oferta y niveles",
+        description: "Servicios, acceso, packs o formas de entrar explicados de manera mucho mas clara.",
+      },
+      {
+        title: "Prueba social",
+        description: "Testimonios y validacion presentados con una estetica sobria y creible.",
+      },
+      {
+        title: "Canales de contacto",
+        description: "Telegram, Instagram, WhatsApp o email integrados con prioridad y criterio para que el siguiente paso quede claro.",
+      },
+      {
+        title: "Metodo y enfoque",
+        description: "Deportes, mercados y forma de trabajar explicados segun tu posicionamiento.",
+      },
+      {
+        title: "CTA y captacion",
+        description: "Mensajes y formularios pensados para que el siguiente paso se vea claro y facil.",
+      },
+    ],
+    closing:
+      "El objetivo es que la landing no se vea generica, sino como una pieza comercial seria, cuidada y alineada con tu servicio.",
+  },
+  testimonials: {
+    eyebrow: "Prueba social",
+    title: "Ejemplos del tipo de feedback que una landing bien resuelta deberia provocar",
+    description:
+      "No se trata de exagerar resultados, sino de reflejar sensaciones creibles: mejor imagen, propuesta mas clara y una captacion mucho mas ordenada.",
     items: [
       {
         quote:
-          "Se nota que hay orden detrás. El contenido llega más claro y me resulta mucho más fácil seguirlo.",
-        author: "Usuario verificado",
-        role: "Seguimiento inicial",
+          "Antes tenia todo repartido entre Telegram, una bio y varios mensajes fijados. Con la landing la propuesta quedo mucho mas clara y ahora cuando me escriben ya vienen entendiendo que ofrezco y como funciona el acceso.",
+        author: "Adrian L.",
+        role: "Tipster de futbol | servicio de suscripcion",
+        focus: "Claridad de oferta",
       },
       {
         quote:
-          "Valoro que no se venda humo. La comunicación es seria y el enfoque se entiende enseguida.",
-        author: "Perfil activo",
-        role: "Canal principal",
+          "Lo que mas me gusto no fue solo el diseno, sino la sensacion general. La pagina da una imagen bastante mas profesional y me ayuda a presentar el servicio como algo serio, no como un canal mas.",
+        author: "Marta R.",
+        role: "Tipster multideporte | marca personal",
+        focus: "Imagen profesional",
       },
       {
         quote:
-          "Me ayuda a ahorrar tiempo porque no tengo que estar interpretando mensajes ni buscando contexto.",
-        author: "Miembro reciente",
-        role: "Acompañamiento premium",
+          "Yo no queria una web recargada, queria orden. Tener una landing con el mensaje bien bajado, los bloques en su sitio y una CTA clara me facilita mucho mas filtrar contactos y no depender de explicar todo por privado.",
+        author: "David S.",
+        role: "Tipster independiente | acceso privado",
+        focus: "Captacion mas ordenada",
       },
     ],
   },
   about: {
-    eyebrow: "Filosofía de trabajo",
-    title: "Trabajo con criterio, seguimiento y una comunicación responsable",
+    eyebrow: "Enfoque",
+    title: "Tu landing no necesita exagerar para vender mejor",
     description:
-      "No vendo fantasías ni resultados garantizados. Mi enfoque es dar contexto, ordenar la información y mantener una línea clara en cada paso.",
+      "La idea es sencilla: ayudarte a presentar tu servicio con mas criterio, explicar mejor tu propuesta y dar un punto de entrada claro a quien ya muestra interes.",
     points: [
-      "Menos promesas, más criterio",
-      "Seguimiento serio y entendible",
-      "Apuesta responsable y sin exageraciones",
+      "Mejor presentacion del servicio",
+      "Mas claridad comercial",
+      "Mas confianza al captar",
     ],
   },
   faq: {
     eyebrow: "Preguntas frecuentes",
-    title: "Lo esencial, explicado de forma directa",
+    title: "Lo esencial, explicado con claridad",
     description:
-      "Si tienes dudas, aquí resolvemos lo importante sin rodeos y con un tono claro.",
+      "Estas son las dudas mas habituales antes de encargar una landing de este tipo.",
     items: [
       {
-        question: "¿Es para principiantes?",
+        question: "Esto sustituye a mi web completa?",
         answer:
-          "Puede encajar tanto con quien empieza como con quien ya tiene experiencia, siempre que busque un enfoque más ordenado.",
+          "No necesariamente. Puede funcionar como una landing principal de captacion o como una pieza comercial concreta dentro de tu ecosistema.",
       },
       {
-        question: "¿Qué recibo exactamente?",
+        question: "Sirve si todavia estoy empezando?",
         answer:
-          "Recibes una forma de trabajo más clara, seguimiento del servicio y una comunicación pensada para entender mejor cada decisión.",
+          "Si, siempre que tengas una oferta que quieras presentar mejor. La clave es ajustar el nivel de desarrollo al momento real del proyecto.",
       },
       {
-        question: "¿Prometéis beneficios?",
+        question: "Se puede adaptar a mi marca y a mis canales?",
         answer:
-          "No. No trabajamos con promesas irreales ni con mensajes de ganancia garantizada.",
+          "Si. La base se personaliza para que el tono, la imagen y los puntos de contacto encajen con tu servicio.",
       },
       {
-        question: "¿Se puede probar antes de entrar?",
+        question: "Hace falta tener todo definido desde el principio?",
         answer:
-          "La prueba inicial está pensada precisamente para eso: ayudarte a valorar si el enfoque encaja contigo.",
+          "No. Muchas veces el trabajo consiste precisamente en ordenar mejor el mensaje y decidir que debe mostrarse primero.",
       },
       {
-        question: "¿Cómo sé si encaja con mi perfil?",
+        question: "Que tipo de CTA se puede usar?",
         answer:
-          "Si valoras el criterio, el seguimiento y una comunicación sobria, probablemente te resulte una opción adecuada.",
+          "Depende del objetivo: formulario, WhatsApp, Telegram, email o una combinacion de varios puntos de entrada bien priorizados.",
       },
     ],
   },
   ctaFinal: {
     eyebrow: "Siguiente paso",
-    title: "Si buscas un enfoque más serio, solicita acceso",
+    title: "Si quieres una landing mas seria, clara y lista para captar, cuentame tu caso",
     description:
-      "Revisa el filtro, deja tus datos y te orientaremos sobre el siguiente paso si el perfil encaja con el servicio.",
-    primaryCta: "Solicita acceso",
-    secondaryCta: "Hablar por email",
+      "Con el filtro completado ya tengo mejor contexto. Si prefieres ir directo, tambien puedes escribirme y vemos si tiene sentido para tu servicio.",
+    primaryCta: "Solicitar propuesta",
+    secondaryCta: "Prefiero escribir por email",
+    secondaryHref: "mailto:hola@nexocriterio.com?subject=Solicitud%20de%20propuesta%20para%20landing",
+    directContactTitle: "Si prefieres hablarlo directo, escribeme por Telegram",
+    directContactDescription:
+      "Es una via mas rapida para una primera toma de contacto. El formulario sigue siendo la opcion principal si quieres dejar mejor explicado tu contexto.",
+    directContactHandle: "@Elte13",
+    directContactHref: "https://t.me/Elte13",
   },
   contactForm: {
     eyebrow: "Contacto",
-    title: "Deja tus datos para revisar tu acceso",
+    title: "Deja tus datos y te respondo con el siguiente paso",
     description:
-      "Rellena lo básico y te responderemos solo para orientar el siguiente paso del servicio.",
+      "Cuanto mas claro sea tu contexto, mejor podre orientarte sobre el enfoque, el nivel de personalizacion y la forma mas recomendable de captar.",
     labels: {
-      searchingFor: "Qué estás buscando",
-      startingPoint: "Punto de partida",
-      mainBlocker: "Qué te frena más",
+      searchingFor: "Que quieres mejorar",
+      startingPoint: "Momento del proyecto",
+      mainBlocker: "Bloqueo principal",
       message: "Mensaje breve",
     },
     placeholders: {
-      searchingFor: "Se mostrará aquí al completar el quiz",
-      startingPoint: "Se mostrará aquí al completar el quiz",
-      mainBlocker: "Se mostrará aquí al completar el quiz",
-      message: "Cuéntanos qué buscas y te orientamos",
+      searchingFor: "Se completa al responder el filtro",
+      startingPoint: "Se completa al responder el filtro",
+      mainBlocker: "Se completa al responder el filtro",
+      message: "Cuentame un poco tu caso y te orientare mejor",
     },
-    button: "Solicita acceso",
-    note: "Sin spam, sin promesas irreales y sin mensajes agresivos. Solo contacto útil para orientar sobre el servicio.",
+    button: "Solicitar propuesta",
+    note: "Sin humo, sin mensajes agresivos y sin procesos eternos. Solo una respuesta clara sobre si tiene sentido y como enfocar tu landing.",
+    email: "hola@nexocriterio.com",
   },
   thanks: {
     eyebrow: "Solicitud recibida",
-    title: "Gracias. Hemos recibido tu solicitud.",
+    title: "Gracias. He recibido tu solicitud.",
     description:
-      "La revisaremos con calma y te contactaremos si tu perfil encaja con el enfoque del servicio.",
+      "La revisare con calma y te respondere para orientarte sobre el siguiente paso si veo buen encaje con lo que buscas.",
     primaryCta: "Volver al inicio",
     secondaryCta: "Escribir por email",
   },
@@ -256,3 +310,4 @@
     ],
   },
 } as const;
+

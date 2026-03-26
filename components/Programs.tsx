@@ -7,16 +7,18 @@ type ProgramsProps = {
     description: string;
     items: readonly {
       name: string;
+      badge: string;
       audience: string;
       description: string;
       bullets: readonly string[];
+      featured?: boolean;
     }[];
   };
 };
 
 export default function Programs({ content }: ProgramsProps) {
   return (
-    <section className="py-8 sm:py-10">
+    <section className="py-10 sm:py-12">
       <div className="max-w-2xl">
         <p className="text-[0.68rem] font-semibold uppercase tracking-[0.32em] text-sky-100/90">
           {content.eyebrow}
@@ -32,11 +34,20 @@ export default function Programs({ content }: ProgramsProps) {
         {content.items.map((item) => (
           <article
             key={item.name}
-            className="rounded-[1.75rem] border border-white/15 bg-white/[0.065] p-5 shadow-[0_18px_50px_rgba(0,0,0,0.18)] backdrop-blur-sm"
+            className={`rounded-[1.75rem] border p-5 shadow-[0_18px_50px_rgba(0,0,0,0.18)] backdrop-blur-sm ${
+              item.featured
+                ? "border-sky-100/30 bg-[linear-gradient(180deg,_rgba(255,255,255,0.12),_rgba(255,255,255,0.06))] shadow-[0_24px_70px_rgba(0,0,0,0.24)]"
+                : "border-white/15 bg-white/[0.065]"
+            }`}
           >
-            <p className="text-[0.68rem] font-semibold uppercase tracking-[0.32em] text-sky-100/90">
-              {item.name}
-            </p>
+            <div className="flex items-center justify-between gap-3">
+              <p className="text-[0.68rem] font-semibold uppercase tracking-[0.32em] text-sky-100/90">
+                {item.name}
+              </p>
+              <span className="rounded-full border border-white/12 bg-black/20 px-3 py-1 text-[0.64rem] font-medium uppercase tracking-[0.2em] text-slate-200">
+                {item.badge}
+              </span>
+            </div>
             <h3 className="mt-3 text-[1.05rem] font-semibold tracking-tight text-white">
               {item.audience}
             </h3>
@@ -59,4 +70,3 @@ export default function Programs({ content }: ProgramsProps) {
     </section>
   );
 }
-

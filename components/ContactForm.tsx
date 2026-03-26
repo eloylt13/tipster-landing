@@ -1,5 +1,7 @@
 ﻿"use client";
 
+import { useState } from "react";
+
 type QuizAnswers = {
   searchingFor: string;
   startingPoint: string;
@@ -25,6 +27,7 @@ type ContactFormProps = {
     };
     button: string;
     note: string;
+    email: string;
   };
   answers: QuizAnswers;
 };
@@ -54,6 +57,27 @@ function Field({
 }
 
 export default function ContactForm({ content, answers }: ContactFormProps) {
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = () => {
+    const body = [
+      "Hola,",
+      "",
+      "Quiero informacion sobre una landing para tipster.",
+      "",
+      `Que quiero mejorar: ${answers.searchingFor || "Sin completar"}`,
+      `Momento del proyecto: ${answers.startingPoint || "Sin completar"}`,
+      `Bloqueo principal: ${answers.mainBlocker || "Sin completar"}`,
+      "",
+      "Mensaje:",
+      message || "Sin mensaje adicional.",
+    ].join("\n");
+
+    window.location.href = `mailto:${content.email}?subject=${encodeURIComponent(
+      "Solicitud de propuesta - Nexo Criterio"
+    )}&body=${encodeURIComponent(body)}`;
+  };
+
   return (
     <form id="contacto" className="grid gap-4">
       <div className="space-y-2.5">
@@ -90,6 +114,8 @@ export default function ContactForm({ content, answers }: ContactFormProps) {
         </label>
         <textarea
           rows={4}
+          value={message}
+          onChange={(event) => setMessage(event.target.value)}
           placeholder={content.placeholders.message}
           className="w-full resize-none rounded-[1.1rem] border border-white/15 bg-white/[0.065] px-4 py-3.5 text-sm text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.03)] outline-none transition placeholder:text-slate-500 focus:border-sky-200/40 focus:bg-white/[0.065]"
         />
@@ -97,6 +123,7 @@ export default function ContactForm({ content, answers }: ContactFormProps) {
 
       <button
         type="button"
+        onClick={handleSubmit}
         className="inline-flex min-h-12 items-center justify-center rounded-full bg-[linear-gradient(180deg,_#ffffff,_#dfe8ff)] px-5 py-3 text-sm font-semibold text-slate-950 shadow-[0_14px_34px_rgba(0,0,0,0.18)] transition hover:translate-y-[-1px] hover:shadow-[0_16px_36px_rgba(0,0,0,0.22)]"
       >
         {content.button}
@@ -105,4 +132,3 @@ export default function ContactForm({ content, answers }: ContactFormProps) {
     </form>
   );
 }
-

@@ -1,0 +1,19 @@
+
+> tipster-landing@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.0 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.141:3000
+✓ Ready in 647ms
+
+ GET / 200 in 388ms (next.js: 208ms, application-code: 180ms)
+ GET / 200 in 350ms (next.js: 10ms, application-code: 340ms)
+ GET / 200 in 78ms (next.js: 8ms, application-code: 70ms)
+ GET / 200 in 105ms (next.js: 6ms, application-code: 100ms)
+ GET / 200 in 99ms (next.js: 10ms, application-code: 89ms)
+ GET / 200 in 289ms (next.js: 92ms, application-code: 196ms)
+ GET / 200 in 122ms (next.js: 9ms, application-code: 113ms)
+[?25h
+
+C:\Proyectos\tipster-landing>

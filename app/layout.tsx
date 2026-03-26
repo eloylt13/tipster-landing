@@ -2,9 +2,9 @@
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Nexo Criterio | Apuestas deportivas con criterio",
+  title: "Nexo Criterio | Landing premium para tipsters",
   description:
-    "Landing de acceso para un servicio de apuestas deportivas centrado en claridad, seguimiento y disciplina.",
+    "Landing comercial para tipsters centrada en claridad, jerarquia, consistencia visual y conversion.",
 };
 
 export default function RootLayout({

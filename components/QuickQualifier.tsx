@@ -22,6 +22,7 @@ type QuickQualifierProps = {
     summaryNote: string;
     primaryCta: string;
     secondaryCta: string;
+    secondaryHref: string;
   };
   answers: QuizAnswers;
   onAnswer: (field: QuizField, value: string) => void;
@@ -69,13 +70,13 @@ export default function QuickQualifier({ content, answers, onAnswer }: QuickQual
   };
 
   const summaryItems = [
-    { label: "Qué estás buscando", value: answers.searchingFor },
-    { label: "Punto de partida", value: answers.startingPoint },
-    { label: "Qué te frena más", value: answers.mainBlocker },
-  ];
+    { label: "Que quieres mejorar", value: answers.searchingFor },
+    { label: "Momento del proyecto", value: answers.startingPoint },
+    { label: "Bloqueo principal", value: answers.mainBlocker },
+  ].filter((item) => item.value.trim().length > 0);
 
   return (
-    <section className="pt-2 sm:pt-4">
+    <section id="filtro-acceso" className="py-10 sm:py-12">
       <div className="overflow-hidden rounded-[2.25rem] border border-white/15 bg-[linear-gradient(180deg,_rgba(255,255,255,0.09),_rgba(255,255,255,0.045))] shadow-[0_28px_90px_rgba(0,0,0,0.32)] backdrop-blur-sm">
         <div className="grid gap-6 px-4 py-5 sm:px-6 sm:py-6 lg:grid-cols-[1.08fr_0.92fr] lg:gap-8 lg:px-7 lg:py-7">
           <div className="space-y-4 lg:pt-1">
@@ -159,9 +160,7 @@ export default function QuickQualifier({ content, answers, onAnswer }: QuickQual
                         <p className="text-[0.66rem] font-semibold uppercase tracking-[0.24em] text-slate-100">
                           {item.label}
                         </p>
-                        <p className="mt-2 text-[0.9rem] leading-6 text-slate-100">
-                          {item.value || "Sin respuesta"}
-                        </p>
+                        <p className="mt-2 text-[0.9rem] leading-6 text-slate-100">{item.value}</p>
                       </div>
                     ))}
                   </div>
@@ -169,7 +168,7 @@ export default function QuickQualifier({ content, answers, onAnswer }: QuickQual
                     {content.summaryNote}
                   </p>
                 </div>
-                <div className="mt-5 flex flex-col gap-3 sm:flex-row">
+                <div className="mt-5 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
                   <button
                     type="button"
                     onClick={handleAccessClick}
@@ -177,12 +176,12 @@ export default function QuickQualifier({ content, answers, onAnswer }: QuickQual
                   >
                     {content.primaryCta}
                   </button>
-                  <button
-                    type="button"
-                    className="inline-flex min-h-12 items-center justify-center rounded-full border border-white/15 bg-white/[0.045] px-5 py-3 text-sm font-semibold text-slate-100 transition hover:border-white/25 hover:bg-white/[0.1] hover:text-white"
+                  <a
+                    href={content.secondaryHref}
+                    className="inline-flex min-h-12 items-center justify-center px-1 py-3 text-sm font-semibold text-slate-300 transition hover:text-white"
                   >
                     {content.secondaryCta}
-                  </button>
+                  </a>
                 </div>
               </div>
             )}
@@ -192,5 +191,4 @@ export default function QuickQualifier({ content, answers, onAnswer }: QuickQual
     </section>
   );
 }
-
 

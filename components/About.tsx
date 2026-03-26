@@ -11,7 +11,7 @@ type AboutProps = {
 
 export default function About({ content }: AboutProps) {
   return (
-    <section className="py-8 sm:py-10">
+    <section className="py-12 sm:py-14">
       <div className="rounded-[2rem] border border-white/15 bg-white/[0.065] p-5 shadow-[0_18px_50px_rgba(0,0,0,0.18)] backdrop-blur-sm sm:p-6">
         <div className="max-w-3xl">
           <p className="text-[0.68rem] font-semibold uppercase tracking-[0.32em] text-sky-100/90">
@@ -38,4 +38,5 @@ export default function About({ content }: AboutProps) {
     </section>
   );
 }
+
 

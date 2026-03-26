@@ -14,7 +14,7 @@ type HowItWorksProps = {
 
 export default function HowItWorks({ content }: HowItWorksProps) {
   return (
-    <section id="como-funciona" className="py-8 sm:py-10">
+    <section id="como-funciona" className="py-10 sm:py-12">
       <div className="rounded-[2rem] border border-white/15 bg-white/[0.065] p-5 shadow-[0_18px_50px_rgba(0,0,0,0.18)] backdrop-blur-sm sm:p-6">
         <div className="max-w-2xl">
           <p className="text-[0.68rem] font-semibold uppercase tracking-[0.32em] text-sky-100/90">
@@ -28,12 +28,15 @@ export default function HowItWorks({ content }: HowItWorksProps) {
           </p>
         </div>
         <div className="mt-6 grid gap-4 lg:grid-cols-3">
-          {content.items.map((item) => (
+          {content.items.map((item, index) => (
             <article
               key={item.title}
               className="rounded-[1.5rem] border border-white/15 bg-black/26 p-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.03)]"
             >
-              <h3 className="text-[1.02rem] font-semibold tracking-tight text-white">
+              <p className="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-sky-100/80">
+                Paso {index + 1}
+              </p>
+              <h3 className="mt-3 text-[1.02rem] font-semibold tracking-tight text-white">
                 {item.title}
               </h3>
               <p className="mt-3 text-sm leading-6 text-slate-100">

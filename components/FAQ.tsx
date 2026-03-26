@@ -14,7 +14,7 @@ type FAQProps = {
 
 export default function FAQ({ content }: FAQProps) {
   return (
-    <section className="py-8 sm:py-10">
+    <section className="pt-12 pb-10 sm:pt-14 sm:pb-12">
       <div className="max-w-2xl">
         <p className="text-[0.68rem] font-semibold uppercase tracking-[0.32em] text-sky-100/90">
           {content.eyebrow}
@@ -42,4 +42,5 @@ export default function FAQ({ content }: FAQProps) {
     </section>
   );
 }
+
 
