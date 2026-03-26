@@ -1,5 +1,19 @@
-﻿import Link from "next/link";
+import type { Metadata } from "next";
+import Link from "next/link";
 import { content } from "@/lib/content";
+
+export const metadata: Metadata = {
+  title: "Gracias",
+  description:
+    "Pagina de confirmacion tras enviar una solicitud sobre la landing para tipsters de Nexo Criterio.",
+  alternates: {
+    canonical: "/gracias",
+  },
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 export default function GraciasPage() {
   return (
